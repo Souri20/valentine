@@ -1,0 +1,24 @@
+/* Base styles (desktop / larger screens) */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Mobile styles (screens up to 768px wide) */
+@media (max-width: 768px) {
+  #root {
+    max-width: 100%;       /* use full width on mobile */
+    padding: 1rem;         /* reduce padding for smaller screens */
+    text-align: left;      /* optional: left-align for readability */
+  }
+}
+
+/* Extra small devices (up to 480px wide) */
+@media (max-width: 480px) {
+  #root {
+    padding: 0.5rem;       /* even tighter spacing */
+    font-size: 0.9rem;     /* slightly smaller text */
+  }
+}
